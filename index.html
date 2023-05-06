@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script type="text/javascript">
+      const numbers = [1, 2, 8, 7, 9, 5, 6];
+
+      function checkNumbers(numbers) {
+        const min = Math.min(...numbers);
+        const max = Math.max(...numbers);
+        const count = numbers.filter((num) => num % 2 !== 0).length;
+
+        console.log("Min number: ", min);
+        console.log("Max number: ", max);
+        console.log("Odd numbers count: ", count);
+
+        // Other method
+
+        // let min = numbers[0];
+        // let max = numbers[0];
+        // let count = 0;
+
+        // for (let i = 0; i < numbers.length; i++) {
+        //   const number = numbers[i];
+
+        //   if (number % 2 !== 0) {
+        //     count++;
+        //   }
+
+        //   if (number < min) {
+        //     min = number;
+        //   }
+
+        //   if (number > max) {
+        //    max = number;
+        //  }
+        // }
+      }
+
+      checkNumbers(numbers);
+    </script>
+  </head>
+  <body></body>
+</html>
